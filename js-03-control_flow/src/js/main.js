@@ -377,3 +377,8 @@ const checkNumber = (number) => {
 
 console.log(checkNumber(4)); // Par
 console.log(checkNumber(7)); // Impar
+
+const numerosPar = (num) => {
+    return num%2 === 0 ? "El número es par ;)" : "No es par :v";
+}
+console.log(numerosPar(14));
