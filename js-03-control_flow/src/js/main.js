@@ -371,12 +371,14 @@ console.log(votingEligibility(16)); // No puede votar
  Usar el operador ternario.
 */
 
+//Pequeña parte hecha por caixba -------------------->
 const checkNumber = (number) => {
     return number % 2 === 0 ? "Par" : "Impar";
 }
 
 console.log(checkNumber(4)); // Par
 console.log(checkNumber(7)); // Impar
+// -------------------------------------------------->
 
 const numerosPar = (num) => {
     return num%2 === 0 ? "El número es par ;)" : "No es par :v";
