@@ -237,10 +237,70 @@ console.log("Final", k); // 5
 // break: Termina completamente un bucle (for, while, switch, etc.).
 // continue: Salta la iteración actual y pasa a la siguiente sin salir del bucle.
 
-
-
+for (let i = 0 ; i <= 5; i++ ){
+    if ( i === 3) continue;
+    console.log("Estoy dentro del ciclo for"); 
+    console.log("Valor de i ", i ); // 0,1,2,4,5
+}
 
 
 // --- 2. Ciclo WHILE (Basado en condición) ---
 // Úsalo cuando NO sabes cuántas veces se repetirá, depende de algo externo.
 // Cuidado: Si la condición nunca es falsa, creas un bucle infinito (Infinite Loop).
+
+/*
+while(  confirm("¿Quieres tu número de la suerte")  ){
+    const numeroSuerte = Math.random(); // 0....1.0(sin incluir 1.0)
+    console.log("Tu número de la suerte es: " + numeroSuerte);
+}
+console.log("Gracias por participar");
+*/
+
+/* ================================================================
+   BLOQUE 4: DIFERENCIAS Y EJERCICIO INTEGRADO 
+   ================================================================
+   
+   FOR vs WHILE:
+   - FOR: Ideal para iterar colecciones (arrays) o rangos numéricos fijos.
+          "Repite esto 10 veces".
+          
+   - WHILE: Ideal para lógica de estado.
+            "Repite esto MIENTRAS el usuario no presione SALIR".
+*/
+
+// Imprimier los números del 1 al 5 (usando WHILE)
+for(let i = 1; i <=5 ; i++ ) {
+    console.log(`Número ${i}`);
+}
+
+let i = 1;
+while(i<=5){
+   console.log("Valor de i es:", i);
+   i++
+}
+
+// ================================================================
+
+const countries = ["México", "USA", "Canadá", "Japón"];
+// Usando FOR LOOP
+for (let index = 0; index < countries.length; index++) {
+   const element = countries[index];
+   console.log(`(for) País en índice ${index}: ${element}`);   
+}
+
+// Usando For OF (ES6+)
+for (const country of countries) {
+   console.log(`(for of) País: ${country}`);
+}
+
+// TODO: RETO FINAL (Simulación de Cajero)
+// Tienes un array de movimientos: [100.00, -50.00, 200.00, -100.00]
+// 1. Usa un ciclo FOR, o WHILE o FOR-OF para recorrer los movimientos.
+// 2. Suma los valores a una variable 'totalBalance'.
+// 3. Imprime el balance final.
+
+const transactions = [100.00, -50.00, 200.00, -100.00, 500.00];
+let totalBalance = 0;
+
+// usando for-each
+transactions.forEach( (transaction, index, array)=> totalBalance += transaction );
