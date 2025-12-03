@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Sign in</button>
-                    <button type="button" id="changeImageButton">Cambiar imagen</button>
+                    <button type="button" class="btn btn-primary" id="changeImage">Cambiar imagen</button>
                 </div>
             </form>
         </section>
@@ -101,8 +101,10 @@
             características modernas de JavaScript como la importación y exportación 
             de funciones, objetos o valores entre archivos, facilitando la 
             modularización del código. -->
+    <button onclick=" alert(participants) ">Show Participants</button>
     <script>
         console.log("index.html loaded");
+        const participants = ["Alice", "Bob", "Charlie"];
         
     </script>
     <script type="module" src="./src/js/main.js" defer></script>
