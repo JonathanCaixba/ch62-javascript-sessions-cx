@@ -1,0 +1,6 @@
+# Se ignora la carpeta de dependencias de NPM
+node_modules
+
+# Se ignora archivos multimedia
+*.avi
+*.mk
