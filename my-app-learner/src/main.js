@@ -16,7 +16,7 @@ document.querySelector('#app').innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Estoy aprendiendo a usar Vite
+      Estoy aprendiendo a usar Vite con JavaScript
     </p>
   </div>
 `
